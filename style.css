@@ -15,6 +15,11 @@ header.logo {
   place-items: center;
 }
 
+.nav-items a {
+  color: #344563;
+  text-decoration: none;
+}
+
 header .logo a {
   color: #6070ff;
   font-weight: 700;
@@ -22,7 +27,7 @@ header .logo a {
   text-decoration: none;
   line-height: 20px;
   padding-top: 20px;
-} 
+}
 
 main {
   padding: 10px 30px;
@@ -47,11 +52,6 @@ nav {
 .menu-icon {
   margin-left: auto;
   padding-top: 10px;
-}
-
-.nav-items a {
-  color: #344563;
-  text-decoration: none;
 }
 
 .intro h1 {
