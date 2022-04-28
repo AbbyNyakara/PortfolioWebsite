@@ -319,9 +319,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.contact-form form {
   padding-top: 20px;
   width: 100%;
 }
