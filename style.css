@@ -349,7 +349,7 @@ button {
   border-radius: 10px;
 }
 
-.contact-form button:hover {
+button:hover {
   background-color: #6070ff;
   color: #fff;
 }
