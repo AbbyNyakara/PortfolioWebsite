@@ -398,14 +398,14 @@ button:hover {
     margin: auto;
   }
 
-  .mobile-img{
+  .mobile-img {
     display: none;
   }
 
-  .card { 
+  .card {
     flex-direction: row;
     gap: 40px;
-  } 
+  }
 
   .desktop-img {
     display: block;
@@ -480,7 +480,7 @@ button:hover {
   }
 
   .contact-me-form {
-    background-image: url("images/desktop-contact-bg.png"); 
+    background-image: url("images/desktop-contact-bg.png");
   }
 
   .contact-form {
