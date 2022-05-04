@@ -353,3 +353,159 @@ button:hover {
   background-color: #6070ff;
   color: #fff;
 }
+
+/* Desktop View */
+.navbar {
+  display: none;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar li {
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+  }
+
+  .first-section {
+    background-image: url("images/desktop-bg.png");
+    background-size: cover;
+  }
+
+  .first-section main {
+    max-width: 600px;
+    padding-top: 100px;
+    margin: auto;
+  }
+
+  .work-section {
+    background-color: #f7f7f9;
+    width: 100%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 50%;
+  }
+
+  .card-2 {
+    flex-direction: row-reverse;
+  }
+
+  .card-2 .content {
+    padding-right: 50px;
+  }
+
+  .desktop-only {
+    display: grid;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .about-me-section {
+    padding: 2em 3em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .language-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    height: 90%;
+  }
+
+  .language-list .language {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    margin-top: 0;
+    padding: 0;
+    margin-right: 1.5em;
+  }
+
+  .language p {
+    padding: 0;
+    margin: 0;
+    margin: auto;
+  }
+
+  .language img {
+    margin: auto;
+  }
+
+  .languages-title img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .frameworks img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .skills-a img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .frameworks {
+    align-items: flex-end;
+  }
+
+  .skills-a {
+    align-items: flex-end;
+  }
+
+  .contact-me-form {
+    background-image: url("images/desktop-contact-bg.png");
+  }
+
+  .contact-form {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact-form button {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 915px) {
+  .card .skills .desktop-only {
+    display: none;
+  }
+}
