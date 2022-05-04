@@ -54,6 +54,8 @@ nav {
   padding-top: 10px;
 }
 
+
+
 .intro h1 {
   margin-top: 0;
   font-size: 40px;
@@ -66,6 +68,7 @@ nav {
 
 .socials {
   padding-top: 5px;
+
 }
 
 .socials p {
@@ -367,7 +370,7 @@ button:hover {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   .menu-icon {
     display: none;
   }
@@ -390,12 +393,18 @@ button:hover {
 
   .first-section {
     background-image: url("images/desktop-bg.png");
+    background-size: cover;
   }
 
   .first-section main {
-    width: 800px;
+    max-width: 600px;
     padding-top: 100px;
     margin: auto;
+  }
+
+  .work-section {
+    background-color: #f7f7f9;
+    width: 100%;
   }
 
   .mobile-img {
@@ -404,11 +413,12 @@ button:hover {
 
   .card {
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
   }
 
   .desktop-img {
     display: block;
+    width: 50%;
   }
 
   .card-2 {
@@ -430,7 +440,7 @@ button:hover {
   .about-me-section {
     padding: 2em 3em;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
   }
 
   .language-list {
@@ -460,15 +470,18 @@ button:hover {
   }
 
   .languages-title img {
-    height: 10%;
+    height: 20px;
+    width: 20px;
   }
 
   .frameworks img {
-    height: 10%;
+    height: 30px;
+    width: 30px;
   }
 
   .skills-a img {
-    height: 10%;
+    height: 30px;
+    width: 30px;
   }
 
   .frameworks {
@@ -491,5 +504,11 @@ button:hover {
 
   .contact-form button {
     margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 915px){
+  .card .skills .desktop-only {
+    display: none;
   }
 }
