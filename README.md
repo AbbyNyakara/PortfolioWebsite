@@ -13,7 +13,7 @@ Project to create a personal portfolio website.
 
 ## Live Demo (if available)
 
-Please click this [Link](https://abbynyakara.github.io/PortfolioWebsite/) to view the live site. 
+[Live Demo Link](https://livedemo.com)
 
 
 To get a local copy up and running follow these simple example steps.
