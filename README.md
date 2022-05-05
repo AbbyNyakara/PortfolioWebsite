@@ -11,9 +11,10 @@ Project to create a personal portfolio website.
 - HTML and CSS Linter
 
 
-## Live Demo (if available)
+## Live Demo 
 
-Please clink this [link](https://abbynyakara.github.io/PortfolioWebsite/) to view the live site.
+Link to live site - [Website link](https://abbynyakara.github.io/PortfolioWebsite/) 
+
 
 
 To get a local copy up and running follow these simple example steps.
