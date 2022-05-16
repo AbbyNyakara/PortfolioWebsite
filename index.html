@@ -12,15 +12,15 @@
 </head>
 <body>
 
-    <section class="header-section">
-        <section class="mobile-menu">
-            <button><img class="close-image" src="images/close.svg" alt=""></button>
-            <ul>
-                <a href="#portfolio"><li>Portfolio</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#contact"><li>Contact</li></a>   
-            </ul>
-        </section>
+    <div class="header-section">
+        <div class="mobile-menu">
+            <button type="button"><img class="close-image" src="images/close.svg" alt=""></button>
+            <div class="mobile-items">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>   
+            </div>
+        </div>
 
             <header>
                 <nav>
@@ -29,13 +29,13 @@
                     </div>
                     
                     <div class="menu-icon">
-                        <button><img src="images/menu-icon.svg" alt="" aria-hidden="true"></button>   
+                        <button type="button"><img src="images/menu-icon.svg" alt="" aria-hidden="true"></button>   
                     </div>
 
                     <ul class="navbar">
-                        <li> <a href="#">Porfolio</a></li>
-                        <li> <a href="#">About</a></li>
-                        <li> <a href="#">Contact</a></li>
+                        <li> <a href="#portfolio">Porfolio</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -51,12 +51,12 @@
                 <div class="socials">
                     <p>let's connect</p>
                     <div class="social-platforms">
-                        <a    href="#"><img class="social" src="images/social-media-icons.png" alt="social media icons" ></a>
+                        <a href="#"><img class="social" src="images/social-media-icons.png" alt="social media icons" ></a>
                     </div>
                 </div> 
             </main>
         </div>
-    </section>
+    </div>
     <!-- Work section  -->
     <section id="portfolio" class="work-section">
         <!-- card1 -->
@@ -239,6 +239,6 @@
             </form>
         </section>
     </div>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

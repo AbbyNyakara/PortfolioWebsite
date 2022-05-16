@@ -391,16 +391,19 @@ button:hover {
   right: 38px;
 }
 
-.mobile-menu li {
-  padding-top: 20px;
+.mobile-menu .mobile-items {
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
-.mobile-menu ul > a {
-  list-style: none;
+.mobile-menu .mobile-items > a {
+  text-decoration: none;
   font-size: 32px;
   font-weight: 600;
   color: #fff;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .menu-icon button {
