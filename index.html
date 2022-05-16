@@ -11,44 +11,54 @@
     <title>Personal Portfolio Website</title>
 </head>
 <body>
-    
-        <header>
-            <nav>
-                <div class="logo">
-                    <p><a href="#">My Logo</a></p>
-                </div>
-                
-                <div class="menu-icon">
-                    <img src="images/menu-icon.svg" alt="" aria-hidden="true">
-                </div>
 
-                <ul class="navbar">
-                    <li> <a href="#">Porfolio</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-    <div class="first-section">
-        <main>   
-            <div class="intro">
-                <h1>I'm Abigael <br> Glad to see you</h1>
-                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what 
-                    you see and have a project you need coded, don’t hestiate to contact me.</p>
+    <div class="header-section">
+        <div class="mobile-menu">
+            <button type="button"><img class="close-image" src="images/x.png" alt=""></button>
+            <div class="mobile-items">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>   
             </div>
-    
-             <div class="socials">
-                <p>let's connect</p>
-                <div class="social-platforms">
-                    <a    href="#"><img class="social" src="images/social-media-icons.png" alt="social media icons" ></a>
-                </div>
-            </div> 
-        </main>
-    </div>
+        </div>
 
+            <header>
+                <nav>
+                    <div class="logo">
+                        <p><a href="#">My Logo</a></p>
+                    </div>
+                    
+                    <div class="menu-icon">
+                        <button type="button"><img src="images/menu-icon.svg" alt="" aria-hidden="true"></button>   
+                    </div>
+
+                    <ul class="navbar">
+                        <li> <a href="#portfolio">Porfolio</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+        <div class="first-section">
+            <main>   
+                <div class="intro">
+                    <h1>I'm Abigael <br> Glad to see you</h1>
+                    <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what 
+                        you see and have a project you need coded, don’t hestiate to contact me.</p>
+                </div>
+        
+                <div class="socials">
+                    <p>let's connect</p>
+                    <div class="social-platforms">
+                        <a href="#"><img class="social" src="images/social-media-icons.png" alt="social media icons" ></a>
+                    </div>
+                </div> 
+            </main>
+        </div>
+    </div>
     <!-- Work section  -->
-    <section class="work-section">
+    <section id="portfolio" class="work-section">
         <!-- card1 -->
         <section class="card work">
 
@@ -167,7 +177,7 @@
     </section>
 
     <!-- About Me section  -->
-    <div class="about-me-section">
+    <div id="about"  class="about-me-section">
         <div class="about">
             <section class="about-me">
                 <h2>About <br> Myself</h2>
@@ -215,9 +225,8 @@
         </div>
     </div>
     
-
     <!-- Contact me form  -->
-    <div class="contact-me-form">
+    <div id="contact" class="contact-me-form">
         <section class="contact-form">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you
@@ -230,5 +239,6 @@
             </form>
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
