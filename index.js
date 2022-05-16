@@ -1,6 +1,6 @@
 const openMenu = document.querySelector('.menu-icon button');
 const closeMenu = document.querySelector('.mobile-menu button');
-const menuItems = document.querySelectorAll('.mobile-menu a')
+const menuItems = document.querySelectorAll('.mobile-menu a');
 
 openMenu.addEventListener('click', () => {
   document.querySelector('.mobile-menu').classList.add('show');
