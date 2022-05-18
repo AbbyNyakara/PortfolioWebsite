@@ -23,7 +23,7 @@ menuItems.forEach((item) => {
 
 form.addEventListener('submit', (e) => {
   const emailValue = email.value;
-  if (emailValue !== emailValue.toLowerCase) {
+  if (emailValue !== emailValue.toLowerCase()) {
     e.preventDefault();
     errorMsg.classList.add('display-content');
   } 
