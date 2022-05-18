@@ -570,3 +570,15 @@ button:hover {
     display: none;
   }
 }
+
+/* Email validation styles */
+small {
+  color: red;
+  text-align: left;
+  display: none;
+  font-size: 10px;
+}
+
+.display-content {
+  display: block;
+}
