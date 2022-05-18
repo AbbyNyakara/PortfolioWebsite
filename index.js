@@ -3,6 +3,8 @@ const closeMenu = document.querySelector('.mobile-menu button');
 const menuItems = document.querySelectorAll('.mobile-menu a');
 const form = document.querySelector('form');
 const email = document.getElementById('email');
+const userName = document.getElementById('name');
+const messageContent = document.getElementById('user-message');
 const errorMsg = document.querySelector('small');
 
 openMenu.addEventListener('click', () => {
@@ -27,4 +29,32 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorMsg.classList.add('display-content');
   }
+});
+
+// Enable Local storage for the form
+
+function populateStorage() {
+  const nameValue = userName.value;
+  const emailValue = email.value;
+  const userMessage = messageContent.value;
+
+  const userInputs = {
+    name: nameValue,
+    email: emailValue,
+    message: userMessage,
+  };
+
+  localStorage.setItem(userInputs, JSON.stringify(userInputs));
+}
+
+const parsedInputs = JSON.parse(localStorage.getItem('userInputs'));
+
+if (parsedInputs) {
+  userName.value = parsedInputs.name;
+  email.value = parsedInputs.email;
+  messageContent.value = parsedInputs.message;
+}
+
+form.addEventListener('input', () => {
+  populateStorage();
 });
