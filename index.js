@@ -26,5 +26,5 @@ form.addEventListener('submit', (e) => {
   if (emailValue !== emailValue.toLowerCase()) {
     e.preventDefault();
     errorMsg.classList.add('display-content');
-  } 
+  }
 });
