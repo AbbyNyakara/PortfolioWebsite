@@ -41,8 +41,8 @@ function populateStorage() {
   const userInputs = {
     name: nameValue,
     email: emailValue,
-    message: userMessage
-  }
+    message: userMessage,
+  };
 
   localStorage.setItem(userInputs, JSON.stringify(userInputs));
 }
@@ -50,9 +50,9 @@ function populateStorage() {
 const parsedInputs = JSON.parse(localStorage.getItem('userInputs'));
 
 if (parsedInputs) {
-  userName.value = parsedFormInputs.name;
-  email.value = parsedFormInputs.email;
-  messageContent.value = parsedFormInputs.message;
+  userName.value = parsedInputs.name;
+  email.value = parsedInputs.email;
+  messageContent.value = parsedInputs.message;
 }
 
 form.addEventListener('input', () => {
