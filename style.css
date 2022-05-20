@@ -637,11 +637,11 @@ small {
     overflow: hidden;
   }
 
-  .popup-hero-img{
+  .popup-hero-img {
     width: 100%;
   }
 
-  .popup-buttons{
+  .popup-buttons {
     display: flex;
     flex-direction: column;
     width: 100%;
