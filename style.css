@@ -602,6 +602,10 @@ small {
   align-items: center;
 }
 
+.cancel {
+  cursor: pointer;
+}
+
 .popup-header .cancel {
   font-size: 35px;
 }
@@ -620,8 +624,4 @@ small {
 
 .blur {
   filter: blur(5px);
-}
-
-.cancel {
-  cursor: pointer;
 }
