@@ -643,17 +643,11 @@ small {
     overflow: scroll;
   }
 
-  .popup-content{
+  .popup-content {
     grid-template-columns: 1fr;
   }
 
   .popup-hero-img {
-    width: 100%;
-  }
-
-  .popup-buttons {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
 
