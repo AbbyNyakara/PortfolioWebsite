@@ -120,7 +120,7 @@ submitButton.forEach((button) => {
     <p class="desktop-only bullet">2018</p>
 </div>
 
-<img src="images/popup-img.png" alt="">
+<img class="popup-hero-img" src="images/popup-img.png" alt="">
 
 <div class="popup-content">
     <div class="popup-text">

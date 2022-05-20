@@ -594,6 +594,7 @@ small {
   left: 10%;
   overflow: scroll;
   background-color: #fff;
+  padding: 20px;
 }
 
 .popup-header {
@@ -618,10 +619,31 @@ small {
   color: #344563;
 }
 
+.popup-hero-img {
+  width: 100%;
+}
+
 .hide {
   display: none;
 }
 
 .blur {
   filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .popup-hero-img{
+    width: 100%;
+  }
+
+  .popup-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
