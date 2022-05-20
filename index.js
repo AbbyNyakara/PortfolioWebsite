@@ -64,7 +64,7 @@ const projectArray = [
     cardTitle: 'Tonic',
     cardDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     class: 'card-2',
-  }
+  },
 ];
 
 portfolio.innerHTML = projectArray.map((project) => {
@@ -97,11 +97,10 @@ portfolio.innerHTML = projectArray.map((project) => {
 
 const submitButton = document.querySelectorAll('.submit');
 const popup = document.querySelector('.popup');
-const cancel = document.querySelector('.cancel');
 const mainContent = document.querySelector('.page-content');
 
-submitButton.forEach(button =>{
-  button.addEventListener('click', ()=>{
+submitButton.forEach(button => {
+  button.addEventListener('click', () => {
    popup.classList.remove('hide');
     mainContent.classList.add('blur');
     popup.innerHTML = `
@@ -157,10 +156,3 @@ submitButton.forEach(button =>{
     });
   });
 });
-
-// document.querySelector('.cancel').addEventListener('click', ()=>{
-//   popup.classList.add('hide');
-//   mainContent.classList.remove('blur');
-//   popup.innerHTML = '';
-// });
-
