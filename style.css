@@ -588,7 +588,7 @@ small {
 .popup {
   width: 80%;
   margin: auto;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 2%;
   left: 10%;
@@ -619,6 +619,10 @@ small {
   color: #344563;
 }
 
+.mobile-text {
+  display: none;
+}
+
 .popup-hero-img {
   width: 100%;
 }
@@ -634,7 +638,13 @@ small {
 @media (max-width: 768px) {
   .popup {
     width: 80%;
-    overflow-x: hidden;
+    margin: auto;
+    padding-bottom: 100px;
+    overflow: scroll;
+  }
+
+  .popup-content{
+    grid-template-columns: 1fr;
   }
 
   .popup-hero-img {
@@ -645,5 +655,31 @@ small {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .popup-text {
+    font-size: 12px;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+  }
+
+  .popup-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .popup button {
+    width: 60%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 12px;
   }
 }

@@ -124,7 +124,7 @@ submitButton.forEach((button) => {
 
 <div class="popup-content">
     <div class="popup-text">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        <p class="desktop-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s
              with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -133,6 +133,9 @@ submitButton.forEach((button) => {
             scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry
             Lorem Ipsum has been the industry's standard dummy 
             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+
+          <p class="mobile-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s</p>
     </div>
     <div>
         <ul class="skills">
