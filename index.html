@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<div class="page-content">
+
     <div class="header-section">
         <div class="mobile-menu">
             <button type="button"><img class="close-image" src="images/x.png" alt=""></button>
@@ -57,11 +59,10 @@
             </main>
         </div>
     </div>
-    <!-- Work section  -->
-    <section id="portfolio" class="work-section">
-        <!-- card1 -->
-        <section class="card work">
 
+    <section id="portfolio" class="work-section"></section>
+        <!-- card1 -->
+   <!--  <section class="card work">
             <img class= "mobile-img" src="images/tonic-section.svg" alt="" aria-hidden="true">
             <img class= "desktop-img" src="images/desktop-snap1.png" alt="" aria-hidden="true">
     
@@ -84,7 +85,6 @@
             </div>
         </section>
 
-        <!-- Card 2 -->
         <section class="card card-2 work">
 
             <img class= "mobile-img" src="images/availability-section.svg" alt="" aria-hidden="true">
@@ -114,7 +114,7 @@
         </section>
 
         <!-- card-3 -->
-        <section class="card work">
+<!--  <section class="card work">
             <img class= "mobile-img" src="images/canopy.svg" alt="" aria-hidden="true">
             <img class= "desktop-img" src="images/desktop-snap3.png" alt="" aria-hidden="true">
 
@@ -144,7 +144,7 @@
         </section>
 
         <!-- card-4 -->
-        <section class="card card-2 work">
+        <!-- <section class="card card-2 work">
             <img class="mobile-img" src="images/prof-printing.svg" alt="" aria-hidden="true">
             <img class="desktop-img" src="images/desktop-snap4.png" alt="" aria-hidden="true">
 
@@ -174,7 +174,7 @@
             </div>
             
         </section>
-    </section>
+    </section> -->
 
     <!-- About Me section  -->
     <div id="about"  class="about-me-section">
@@ -240,6 +240,53 @@
             </form>
         </section>
     </div>
+</div>
+    <!-- Popup Container -->
+    <section class="popup hide">
+        <div class="popup-header">
+            <h2>Tonic</h2>
+            <span class="cancel">&times;</span>
+        </div>
+        
+        <div class="experience-section">
+            <p class="mobile-only canopy">Canopy</p>
+            <p class="desktop-only canopy">Uber</p>
+            <img src="images/Counter.svg" alt="" aria-hidden="true">
+            <p class="mobile-only bullet">Back End Dev</p>
+            <p class="desktop-only bullet">Lead Developer</p>
+            <img src="images/Counter.svg" alt="" aria-hidden="true">
+            <p class="mobile-only bullet">2015</p>
+            <p class="desktop-only bullet">2018</p>
+        </div>
+        
+        <img src="images/popup-img.png" alt="">
+        
+        <div class="popup-content">
+            <div class="popup-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s
+                     with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                     the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                     printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and
+                    scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy 
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+            </div>
+            <div>
+                <ul class="skills">
+                    <li>html</li>
+                    <li class="desktop-only">Ruby on rails</li>
+                    <li>css</li>
+                    <li>javaScript</li>
+                </ul>
+                <div class="popup-buttons">
+                    <button>See Live <img src="images/see-more.png" alt=""></button>
+                    <button>See More <img src="images/angelist.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>

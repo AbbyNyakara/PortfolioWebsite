@@ -582,3 +582,46 @@ small {
 .display-content {
   display: block;
 }
+
+/* Popup section  */
+
+.popup {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  position: fixed;
+  top: 2%;
+  left: 10%;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-header .cancel {
+  font-size: 35px;
+}
+
+.popup-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 20px;
+  padding: 20px;
+  color: #344563;
+}
+
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.cancel {
+  cursor: pointer;
+}
