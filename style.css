@@ -634,7 +634,7 @@ small {
 @media (max-width: 768px) {
   .popup {
     width: 80%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .popup-hero-img {
