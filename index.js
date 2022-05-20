@@ -68,7 +68,7 @@ const projectArray = [
 ];
 
 portfolio.innerHTML = projectArray.map((project) => {
-  return html = `
+  const html = `
   <section class="card ${project.class} work">
   <img class= "mobile-img" src="${project.mobileImg}" alt="" aria-hidden="true">
   <img class= "desktop-img" src="${project.desktopImg}" alt="" aria-hidden="true">
@@ -91,17 +91,17 @@ portfolio.innerHTML = projectArray.map((project) => {
       <button class="submit" type="submit">See Project</button>
   </div>
 </section>
-  `
+  `;
+  return html;
 });
-
 
 const submitButton = document.querySelectorAll('.submit');
 const popup = document.querySelector('.popup');
 const mainContent = document.querySelector('.page-content');
 
-submitButton.forEach(button => {
+submitButton.forEach((button) => {
   button.addEventListener('click', () => {
-   popup.classList.remove('hide');
+    popup.classList.remove('hide');
     mainContent.classList.add('blur');
     popup.innerHTML = `
     <div class="popup-header">
@@ -147,9 +147,9 @@ submitButton.forEach(button => {
         </div>
     </div>
 </div>
-    `
+    `;
 
-    document.querySelector('.cancel').addEventListener('click', ()=>{
+    document.querySelector('.cancel').addEventListener('click', () => {
       popup.classList.add('hide');
       mainContent.classList.remove('blur');
       popup.innerHTML = '';
